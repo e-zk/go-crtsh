@@ -1,0 +1,25 @@
+go-crtsh
+========
+
+go library for requesting certificate transparency logs from crt.sh
+
+install
+=======
+
+for use as a library:
+
+	go get go.zakaria.org/sghs@latest
+
+to install the cli tool:
+
+	go install -v go.zakaria.org/crtsh/cmd/crtsh@latest
+
+cli usage
+=========
+
+	usage: crtsh [-e] [-j] query
+	where:
+		-e	show expired certs
+		-j	output raw JSON returned
+		query	the domain query
+
